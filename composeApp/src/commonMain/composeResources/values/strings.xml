@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Compose App</string>
+    <string name="welcome">Welcome to Compose Multiplatform!</string>
+    <string name="str_template">Hello, %2$s! You have %1$d new messages.</string>
+</resources>

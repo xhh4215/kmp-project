@@ -30,6 +30,7 @@ kotlin {
 
 
 
+
     sourceSets {
         all {
             languageSettings.optIn("kotlin.time.ExperimentalTime")
@@ -39,6 +40,7 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.ui)
+            //多平台访问资源的依赖库
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
@@ -73,6 +75,11 @@ kotlin {
             implementation(libs.kotlin.test)
         }
     }
+}
+
+compose.resources{
+    publicResClass = true
+
 }
 
 android {
